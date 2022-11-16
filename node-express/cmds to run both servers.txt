@@ -1,0 +1,2 @@
+CD into their dir
+npm run start > ./log.txt &

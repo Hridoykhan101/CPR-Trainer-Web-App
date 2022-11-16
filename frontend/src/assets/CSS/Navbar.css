@@ -1,0 +1,117 @@
+.navbar {
+    background: white;
+    height: 100px;
+    display: flex;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  
+.navbar-container-left {
+    display: flex;
+    height: 80px;
+    width: 100%;
+}
+
+.navbar-container-right {
+    display: flex;
+    height: 80px;
+    width: 100%;
+}
+
+.navbar-name {
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+    align-items: center;
+}
+
+.navbar-logo {
+    justify-self: start;
+    display: flex;
+    height: 100px;
+    width: 300px;
+    padding: 15px;
+}
+
+.nav-menu {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-gap: 10px;
+    list-style: none;
+    text-align: center;
+    width: 60vw;
+    justify-content: end;
+    margin-right: 2rem;
+    padding: 15px;
+}
+
+.nav-item {
+    height: 80px;
+}
+
+.nav-links {
+    color:black;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0.5rem 2rem;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav-links:hover {
+    border-bottom: 4px solid #fff;
+    transition: all 1s;
+}
+  
+.fa-bars {
+    color: #fff;
+}
+
+@media screen and (max-width: 960px) {
+.NavbarItems {
+    position: relative;
+}
+
+.nav-menu.active {
+      background: #242222;
+      left: 0;
+      opacity: 1;
+      transition: all 0.5s ease;
+      z-index: 1;
+}
+
+.menu-icon {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform: translate(-100%, 60%);
+      font-size: 1.8rem;
+      cursor: pointer;
+}
+
+.nav-links-mobile {
+      display: block;
+      text-align: center;
+      margin: 2rem auto;
+      border-radius: 4px;
+      width: 80%;
+      text-decoration: none;
+      font-size: 1.5rem;
+      background-color: transparent;
+      color: #fff;
+      padding: 14px 20px;
+      border: 1px solid #fff;
+      transition: all 0.3s ease-out;
+}
+
+.nav-links-mobile:hover {
+      background: #fff;
+      color: #242424;
+      transition: 250ms;
+    }
+}

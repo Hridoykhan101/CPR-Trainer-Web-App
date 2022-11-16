@@ -1,0 +1,60 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.SideBarContainer {
+    flex: 1;
+    background-color:#ffc96d;
+    float:left;
+}
+
+.SideBarList {
+    padding: 0;
+    width: 100%;
+}
+
+ .SideBarList .row {
+    height: 70px;
+    width: 100%;
+    list-style-type: none;
+    margin: 0%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.SideBarList .row:hover {
+    cursor: pointer;
+    background-color: darkorange;
+}
+
+.row #icon{
+    flex: 30%;
+    display: grid;
+    place-items: center;
+}
+
+.row #title{
+    flex: 70%;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.logout {
+    padding-left: 3rem;
+}
+
+.pl-3 {
+    padding-left: 2rem;
+}
+
+.flex {
+    display: flex;
+}
+
+.dropdown {
+    color: #ffff;
+    background: gray;
+}
